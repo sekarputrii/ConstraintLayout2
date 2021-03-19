@@ -2,6 +2,7 @@ package com.example.constraintlayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,11 +29,19 @@ public class MainActivity extends AppCompatActivity {
                 Username = editTextTextPersonName.getText().toString();
                 Password = editTextTextPassword.getText().toString();
 
-                if(Username.equals("sekarputri@gmail.com") && Password.equals("Sekar83"))
-                {
+                //Mengecek apakah isi dari email dan password sudah sama dengan email dan login
+                if(Username.equals("sekarputri@gmail.com") && Password.equals("Sekar83")) {
                     Toast s = Toast.makeText(getApplicationContext(),
-                            "Success, \nUsername : "+ Username +"\nPassword : "+ Password, Toast.LENGTH_LONG);
+                            "Success, \nUsername : " + Username + "\nPassword : " + Password, Toast.LENGTH_LONG);
                     s.show();
+                    Bundle b = new Bundle();
+                    b.putString("Parameter", Username.trim());
+                    b.putString("Parameter2", Password.trim());
+
+
+                    Intent NewIntent = new Intent(MainActivity.this, MainActivity2.class);
+                    NewIntent.putExtras(b);
+                    startActivity(NewIntent);
                 }
                 else if(!Username.equals("sekarputri@gmail.com") && Password.equals("Sekar83"))
                 {
@@ -54,9 +63,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public boolean validasiData(){
+        //Mengeset email yang benar
         String nameActive = "sekarputri@gmail.com";
+        //Mengeset password yang benar
         String passwordActive = "Sekar83";
-
+        //Mengecek apakah isi dari email dan password sudah sama dengan email dan login
         if(nameActive.equals(editTextTextPersonName.getText().toString()) && passwordActive.equals(editTextTextPassword.getText().toString())){
             return true;
         }

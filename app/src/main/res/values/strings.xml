@@ -3,4 +3,9 @@
     <string name="LOGIN">LOGIN</string>
     <string name="Username">Username</string>
     <string name="Password">Password</string>
+    <string name="Tampilan">Tampilan</string>
+    <string name="Email">Email</string>
+    <string name="tEmail">tEmail</string>
+    <string name="tPassword">tPassword</string>
+    <string name="txPassword">txPassword</string>
 </resources>
