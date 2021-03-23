@@ -5,7 +5,15 @@
     <string name="Password">Password</string>
     <string name="Tampilan">Tampilan</string>
     <string name="Email">Email</string>
-    <string name="tEmail">tEmail</string>
-    <string name="tPassword">tPassword</string>
-    <string name="txPassword">txPassword</string>
+    <string name="tEmail">Email</string>
+    <string name="tPassword">Password</string>
+    <string name="txPassword">Password</string>
+    <string name="label2">Login Success</string>
+    <string name="Pendaftaran">Pendaftaran</string>
+    <string name="Daftar">Daftar</string>
+    <string name="Nama">Masukkan Nama</string>
+    <string name="eEmail">Masukkan Email</string>
+    <string name="epassword">Masukkan Password</string>
+    <string name="erpassword">Masukkan Password Kembali</string>
+    <string name="Alamat">Masukkan Alamat</string>
 </resources>
