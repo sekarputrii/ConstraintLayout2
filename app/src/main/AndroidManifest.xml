@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.constraintlayout">
+    package="com.example.constraintlayout" >
 
     <application
         android:allowBackup="true"
@@ -8,10 +8,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ConstraintLayout">
-        <activity android:name=".form_baru"></activity>
+        android:theme="@style/Theme.ConstraintLayout" >
+        <activity android:name=".ActivityLihatData" android:label="@string/DetailKontak" android:parentActivityName=".Home_Activity"></activity>
+        <activity android:name=".Home_Activity" android:label="Data Kontak" android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".form_baru" />
         <activity android:name=".Menu" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +23,7 @@
         <activity
             android:name=".MainActivity2"
             android:label="@string/Tampilan"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
